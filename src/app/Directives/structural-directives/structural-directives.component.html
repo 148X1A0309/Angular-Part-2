@@ -1,0 +1,7 @@
+<button class="btn btn-primary" (click)="OnToggleData()">Display Data</button>
+
+<p *ngIf="showDetails">Secret Mission Apollo 13</p>
+
+<div *ngFor="let logData of log"
+ [ngStyle]="{backgroundColor: logData>=5 ?'blue':'transparent'}" 
+[ngClass]="{'displayData':logData>=5}">{{logData}}</div>
