@@ -5,16 +5,17 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { StructuralDirectivesComponent } from './Directives/structural-directives/structural-directives.component';
-import { HeaderComponent } from './NewApp/header/header.component';
-import { RecipeDetailsComponent } from './NewApp/recipes/recipe-details/recipe-details.component';
-import { RecipeItemComponent } from './NewApp/recipes/recipes-list/recipe-item/recipe-item.component';
-import { RecipesListComponent } from './NewApp/recipes/recipes-list/recipes-list.component';
-import { ShoppingEditComponent } from './NewApp/shopping/shopping-list/shopping-edit/shopping-edit.component';
-import { ShoppingListComponent } from './NewApp/shopping/shopping-list/shopping-list.component';
+import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
+import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { RecipesComponent } from './recipes/recipes.component';
+import { RecipeDetailsComponent } from './recipes/recipe-details/recipe-details.component';
+import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
+import { HeaderComponent } from './header/header.component';
+
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent,StructuralDirectivesComponent ,HeaderComponent,RecipeDetailsComponent,RecipeItemComponent,RecipesListComponent,ShoppingEditComponent,ShoppingListComponent],
+  declarations: [ AppComponent, HelloComponent,StructuralDirectivesComponent,ShoppingEditComponent,ShoppingListComponent,RecipesComponent,RecipeDetailsComponent,RecipeListComponent,HeaderComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
